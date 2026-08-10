@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Webster Cañamaque | E-commerce & Lead Research Specialist</title>
+    <title>Webster Cañamaque | Lead Researcher & SDR</title>
 
-    <meta name="description" content="Webster Cañamaque - E-commerce and B2B Lead Research Specialist specializing in product listings, product research, store setup, and lead generation.">
+    <meta name="description" content="Webster Cañamaque - Lead Researcher, Lead Generation Specialist, Sales Researcher and SDR specializing in B2B prospecting, ICP research and sales intelligence.">
 
     <style>
+
+        /* =========================
+           GLOBAL
+        ========================= */
+
         * {
             margin: 0;
             padding: 0;
@@ -20,338 +25,561 @@
         }
 
         body {
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: Inter, Arial, Helvetica, sans-serif;
+            background: #0b0f19;
+            color: #e5e7eb;
             line-height: 1.6;
-            color: #1f2937;
-            background: #f8fafc;
         }
 
         a {
             text-decoration: none;
+            color: inherit;
         }
 
         .container {
             width: 90%;
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
         }
 
-        /* NAVIGATION */
+
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
             position: sticky;
             top: 0;
             z-index: 1000;
+            background: rgba(11, 15, 25, 0.94);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #1f2937;
         }
 
         .nav-container {
-            max-width: 1100px;
             width: 90%;
+            max-width: 1150px;
             margin: auto;
+
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 18px 0;
+
+            padding: 20px 0;
         }
 
         .logo {
-            font-size: 22px;
-            font-weight: 700;
-            color: #111827;
+            font-size: 21px;
+            font-weight: 800;
+            color: #ffffff;
+            letter-spacing: -0.5px;
         }
 
         .logo span {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
         .nav-links {
             display: flex;
-            gap: 25px;
+            gap: 28px;
             list-style: none;
         }
 
         .nav-links a {
-            color: #374151;
+            color: #9ca3af;
             font-size: 14px;
             font-weight: 600;
+            transition: 0.2s;
         }
 
         .nav-links a:hover {
-            color: #2563eb;
+            color: #ffffff;
         }
 
-        /* HERO */
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
-            padding: 100px 0;
-            background: linear-gradient(135deg, #eff6ff, #ffffff);
+            min-height: 88vh;
+
+            display: flex;
+            align-items: center;
+
+            background:
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(37, 99, 235, 0.18),
+                    transparent 35%
+                ),
+                #0b0f19;
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
         }
 
-        .badge {
-            display: inline-block;
-            background: #dbeafe;
-            color: #1d4ed8;
-            padding: 8px 15px;
+        .status {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            padding: 7px 13px;
+
+            border: 1px solid #1e3a8a;
             border-radius: 30px;
-            font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
+
+            color: #93c5fd;
+            background: #0f1b33;
+
+            font-size: 13px;
+            font-weight: 700;
+
+            margin-bottom: 25px;
+        }
+
+        .status-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+            background: #60a5fa;
         }
 
         .hero h1 {
-            font-size: 56px;
-            line-height: 1.1;
-            color: #111827;
-            margin-bottom: 20px;
+            font-size: clamp(45px, 7vw, 78px);
+            line-height: 1.03;
+
+            letter-spacing: -3px;
+
+            color: #ffffff;
+
+            margin-bottom: 25px;
         }
 
         .hero h1 span {
-            color: #2563eb;
+            color: #60a5fa;
         }
 
-        .hero p {
-            font-size: 20px;
-            color: #4b5563;
-            max-width: 700px;
-            margin-bottom: 30px;
+        .hero-subtitle {
+            font-size: 21px;
+            color: #9ca3af;
+
+            max-width: 750px;
+
+            margin-bottom: 35px;
         }
 
-        .buttons {
+        .hero-subtitle strong {
+            color: #e5e7eb;
+        }
+
+        .hero-buttons {
             display: flex;
-            gap: 15px;
+            gap: 14px;
             flex-wrap: wrap;
         }
 
         .btn {
-            display: inline-block;
-            padding: 13px 22px;
+            padding: 14px 22px;
+
             border-radius: 8px;
-            font-weight: 600;
+
+            font-size: 14px;
+            font-weight: 700;
+
             transition: 0.2s;
         }
 
         .btn-primary {
             background: #2563eb;
-            color: white;
+            color: #ffffff;
         }
 
         .btn-primary:hover {
             background: #1d4ed8;
+            transform: translateY(-2px);
         }
 
         .btn-secondary {
-            border: 1px solid #d1d5db;
-            color: #374151;
-            background: white;
+            border: 1px solid #374151;
+            color: #ffffff;
+            background: transparent;
         }
 
         .btn-secondary:hover {
-            background: #f3f4f6;
+            background: #111827;
+            transform: translateY(-2px);
         }
 
-        /* SECTIONS */
+
+        /* =========================
+           SECTION
+        ========================= */
 
         section {
-            padding: 80px 0;
+            padding: 100px 0;
         }
 
-        .section-title {
-            text-align: center;
-            margin-bottom: 45px;
-        }
+        .section-label {
+            color: #60a5fa;
+            text-transform: uppercase;
 
-        .section-title h2 {
-            font-size: 36px;
-            color: #111827;
+            font-size: 12px;
+            font-weight: 800;
+
+            letter-spacing: 2px;
+
             margin-bottom: 10px;
         }
 
-        .section-title p {
-            color: #6b7280;
+        .section-title {
+            font-size: 40px;
+            color: #ffffff;
+
+            letter-spacing: -1px;
+
+            margin-bottom: 15px;
         }
 
-        /* ABOUT */
+        .section-description {
+            color: #9ca3af;
+            max-width: 650px;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
 
         .about {
-            background: white;
+            background: #0f1420;
+            border-top: 1px solid #1f2937;
+            border-bottom: 1px solid #1f2937;
         }
 
-        .about-content {
-            max-width: 800px;
-            margin: auto;
-            text-align: center;
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 70px;
+
+            align-items: center;
         }
 
-        .about-content p {
-            color: #4b5563;
-            margin-bottom: 15px;
+        .about-text p {
+            color: #9ca3af;
             font-size: 17px;
+
+            margin-bottom: 18px;
         }
 
-        /* SERVICES */
+        .about-text strong {
+            color: #e5e7eb;
+        }
+
+        .focus-card {
+            border: 1px solid #263244;
+            background: #111827;
+
+            padding: 30px;
+
+            border-radius: 14px;
+        }
+
+        .focus-card h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+        }
+
+        .focus-list {
+            list-style: none;
+        }
+
+        .focus-list li {
+            padding: 11px 0;
+
+            border-bottom: 1px solid #1f2937;
+
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+        .focus-list li:last-child {
+            border-bottom: none;
+        }
+
+        .focus-list li::before {
+            content: "✓";
+            color: #60a5fa;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           SERVICES
+        ========================= */
 
         .services-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            gap: 18px;
+
+            margin-top: 45px;
         }
 
-        .card {
-            background: white;
-            padding: 30px;
+        .service-card {
+            background: #111827;
+
+            border: 1px solid #1f2937;
+
             border-radius: 12px;
-            border: 1px solid #e5e7eb;
-            transition: 0.2s;
+
+            padding: 28px;
+
+            transition: 0.25s;
         }
 
-        .card:hover {
-            transform: translateY(-4px);
-            border-color: #bfdbfe;
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
         }
 
-        .card-icon {
-            font-size: 30px;
-            margin-bottom: 15px;
+        .service-number {
+            color: #3b82f6;
+
+            font-size: 13px;
+            font-weight: 800;
+
+            margin-bottom: 25px;
         }
 
-        .card h3 {
-            color: #111827;
+        .service-card h3 {
+            color: #ffffff;
+            font-size: 19px;
+
             margin-bottom: 10px;
         }
 
-        .card p {
-            color: #6b7280;
-            font-size: 15px;
+        .service-card p {
+            color: #9ca3af;
+            font-size: 14px;
         }
 
-        /* PORTFOLIO */
 
-        .portfolio {
-            background: white;
+        /* =========================
+           PROCESS
+        ========================= */
+
+        .process {
+            background: #0f1420;
+            border-top: 1px solid #1f2937;
+            border-bottom: 1px solid #1f2937;
         }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+
+            margin-top: 50px;
+        }
+
+        .process-step {
+            padding: 25px;
+
+            border-left: 1px solid #263244;
+        }
+
+        .process-step:first-child {
+            border-left: none;
+        }
+
+        .step-number {
+            font-size: 12px;
+            color: #60a5fa;
+            font-weight: 800;
+
+            margin-bottom: 18px;
+        }
+
+        .process-step h3 {
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+
+        .process-step p {
+            color: #9ca3af;
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           PORTFOLIO
+        ========================= */
 
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            gap: 20px;
+
+            margin-top: 45px;
         }
 
-        .project {
-            border: 1px solid #e5e7eb;
-            border-radius: 12px;
-            overflow: hidden;
-            background: #f9fafb;
+        .project-card {
+            background: #111827;
+
+            border: 1px solid #1f2937;
+
+            border-radius: 14px;
+
+            padding: 32px;
+
+            transition: 0.25s;
         }
 
-        .project-header {
-            background: #dbeafe;
-            padding: 30px;
-            font-size: 40px;
+        .project-card:hover {
+            border-color: #2563eb;
+            transform: translateY(-4px);
         }
 
-        .project-body {
-            padding: 25px;
-        }
+        .project-type {
+            color: #60a5fa;
 
-        .project-body h3 {
-            margin-bottom: 10px;
-            color: #111827;
-        }
+            font-size: 12px;
+            font-weight: 800;
 
-        .project-body p {
-            color: #6b7280;
-            font-size: 15px;
+            text-transform: uppercase;
+
+            letter-spacing: 1px;
+
             margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            font-size: 23px;
+            color: #ffffff;
+
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #9ca3af;
+
+            font-size: 14px;
+
+            margin-bottom: 22px;
+        }
+
+        .tags {
+            display: flex;
+            gap: 7px;
+            flex-wrap: wrap;
         }
 
         .tag {
-            display: inline-block;
-            background: #eef2ff;
-            color: #4338ca;
-            padding: 5px 10px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-right: 5px;
+            padding: 6px 10px;
+
+            border-radius: 5px;
+
+            background: #172033;
+            border: 1px solid #263244;
+
+            color: #93c5fd;
+
+            font-size: 11px;
+            font-weight: 700;
         }
 
-        /* SKILLS */
+
+        /* =========================
+           SKILLS
+        ========================= */
 
         .skills {
-            text-align: center;
+            background: #0f1420;
+            border-top: 1px solid #1f2937;
         }
 
-        .skills-list {
+        .skills-wrapper {
+            margin-top: 40px;
+
             display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            gap: 12px;
+
+            gap: 10px;
         }
 
         .skill {
-            background: white;
-            border: 1px solid #e5e7eb;
-            padding: 12px 18px;
-            border-radius: 8px;
-            font-weight: 600;
-            color: #374151;
-        }
+            padding: 11px 16px;
 
-        /* CONTACT */
+            border-radius: 7px;
 
-        .contact {
+            border: 1px solid #263244;
+
             background: #111827;
-            color: white;
-            text-align: center;
+
+            color: #d1d5db;
+
+            font-size: 13px;
+            font-weight: 600;
         }
 
-        .contact h2 {
-            font-size: 36px;
+
+        /* =========================
+           CTA
+        ========================= */
+
+        .cta {
+            text-align: center;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(37, 99, 235, 0.15),
+                    transparent 55%
+                ),
+                #0b0f19;
+        }
+
+        .cta h2 {
+            font-size: 45px;
+            color: #ffffff;
+
             margin-bottom: 15px;
         }
 
-        .contact p {
-            color: #d1d5db;
-            margin-bottom: 30px;
+        .cta p {
+            color: #9ca3af;
+
+            max-width: 600px;
+
+            margin: 0 auto 30px;
         }
 
-        .contact-links {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
 
-        .contact-btn {
-            background: white;
-            color: #111827;
-            padding: 12px 20px;
-            border-radius: 8px;
-            font-weight: 600;
-        }
-
-        .contact-btn:hover {
-            background: #e5e7eb;
-        }
-
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
-            background: #030712;
-            color: #9ca3af;
+            border-top: 1px solid #1f2937;
+
+            padding: 30px 0;
+
             text-align: center;
-            padding: 25px;
-            font-size: 14px;
+
+            color: #6b7280;
+
+            font-size: 13px;
         }
 
-        /* MOBILE */
 
-        @media (max-width: 768px) {
+        /* =========================
+           MOBILE
+        ========================= */
+
+        @media (max-width: 800px) {
 
             .nav-container {
                 flex-direction: column;
@@ -360,61 +588,101 @@
 
             .nav-links {
                 gap: 15px;
-                flex-wrap: wrap;
                 justify-content: center;
+                flex-wrap: wrap;
             }
 
             .hero {
-                padding: 70px 0;
+                min-height: auto;
+                padding: 90px 0;
             }
 
             .hero h1 {
-                font-size: 40px;
+                letter-spacing: -2px;
             }
 
-            .hero p {
-                font-size: 17px;
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 35px;
             }
 
             .services-grid {
                 grid-template-columns: 1fr;
             }
 
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-step {
+                border-left: none;
+                border-top: 1px solid #263244;
+            }
+
+            .process-step:first-child {
+                border-top: none;
+            }
+
             .portfolio-grid {
                 grid-template-columns: 1fr;
             }
 
-            .section-title h2 {
-                font-size: 30px;
+            .cta h2 {
+                font-size: 35px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
 
-    <!-- NAVIGATION -->
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
 
     <nav>
+
         <div class="nav-container">
 
-            <div class="logo">
+            <a href="#" class="logo">
                 Webster<span>.</span>
-            </div>
+            </a>
 
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#services">Services</a>
+                </li>
+
+                <li>
+                    <a href="#process">Process</a>
+                </li>
+
+                <li>
+                    <a href="#portfolio">Portfolio</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
             </ul>
 
         </div>
+
     </nav>
 
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+    ========================== -->
 
     <section class="hero">
 
@@ -422,31 +690,52 @@
 
             <div class="hero-content">
 
-                <span class="badge">
-                    Available for Freelance Opportunities
-                </span>
+                <div class="status">
+
+                    <span class="status-dot"></span>
+
+                    Open to Remote Opportunities
+
+                </div>
+
 
                 <h1>
-                    Hi, I'm <span>Webster.</span>
+
+                    Lead Researcher
                     <br>
-                    E-commerce & Lead Research Specialist
+
+                    <span>& Sales Development Specialist</span>
+
                 </h1>
 
-                <p>
-                    I help businesses organize their online stores,
-                    improve product listings, conduct product research,
-                    and identify qualified B2B prospects through
-                    structured web research and lead generation.
+
+                <p class="hero-subtitle">
+
+                    I help B2B teams identify the right companies,
+                    find the right decision-makers, and build
+                    <strong>qualified prospect lists</strong>
+                    that support their sales pipeline.
+
                 </p>
 
-                <div class="buttons">
 
-                    <a href="#portfolio" class="btn btn-primary">
-                        View My Work
+                <div class="hero-buttons">
+
+                    <a
+                        href="#portfolio"
+                        class="btn btn-primary">
+
+                        View My Research
+
                     </a>
 
-                    <a href="#contact" class="btn btn-secondary">
+
+                    <a
+                        href="#contact"
+                        class="btn btn-secondary">
+
                         Let's Connect
+
                     </a>
 
                 </div>
@@ -458,35 +747,105 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================== -->
 
     <section id="about" class="about">
 
         <div class="container">
 
-            <div class="section-title">
-                <h2>About Me</h2>
-                <p>A detail-oriented professional focused on digital business support.</p>
-            </div>
+            <div class="about-grid">
 
-            <div class="about-content">
 
-                <p>
-                    I'm Webster Cañamaque, an aspiring remote professional
-                    specializing in e-commerce support and B2B lead research.
-                </p>
+                <div class="about-text">
 
-                <p>
-                    My work focuses on product research, product listing
-                    optimization, store organization, prospect research,
-                    and lead generation.
-                </p>
+                    <div class="section-label">
+                        About Me
+                    </div>
 
-                <p>
-                    I enjoy working with data, researching businesses,
-                    organizing information, and turning raw information
-                    into useful business insights.
-                </p>
+                    <h2 class="section-title">
+                        Research before outreach.
+                    </h2>
+
+
+                    <p>
+
+                        I'm <strong>Webster Cañamaque</strong>,
+                        an aspiring Lead Researcher and Sales
+                        Development Representative focused on
+                        B2B prospecting and sales intelligence.
+
+                    </p>
+
+
+                    <p>
+
+                        My approach is simple:
+                        <strong>
+                            understand the target market,
+                            identify the right accounts,
+                            find the right people,
+                            and organize the information
+                            sales teams need to start meaningful
+                            conversations.
+                        </strong>
+
+                    </p>
+
+
+                    <p>
+
+                        I'm particularly interested in working with
+                        B2B SaaS and technology companies where
+                        structured research and accurate prospecting
+                        can support outbound sales.
+
+                    </p>
+
+                </div>
+
+
+                <div class="focus-card">
+
+                    <h3>
+                        My Research Focus
+                    </h3>
+
+
+                    <ul class="focus-list">
+
+                        <li>
+                            Ideal Customer Profile Research
+                        </li>
+
+                        <li>
+                            Target Account Identification
+                        </li>
+
+                        <li>
+                            Decision-Maker Research
+                        </li>
+
+                        <li>
+                            B2B Lead Generation
+                        </li>
+
+                        <li>
+                            Lead Qualification
+                        </li>
+
+                        <li>
+                            Sales Intelligence
+                        </li>
+
+                        <li>
+                            Prospect Database Building
+                        </li>
+
+                    </ul>
+
+                </div>
 
             </div>
 
@@ -495,107 +854,155 @@
     </section>
 
 
-    <!-- SERVICES -->
+    <!-- =========================
+         SERVICES
+    ========================== -->
 
     <section id="services">
 
         <div class="container">
 
-            <div class="section-title">
-
-                <h2>What I Can Help With</h2>
-
-                <p>
-                    Practical support for e-commerce businesses and
-                    B2B companies.
-                </p>
-
+            <div class="section-label">
+                Capabilities
             </div>
+
+            <h2 class="section-title">
+                How I Can Support Your Sales Team
+            </h2>
+
+            <p class="section-description">
+
+                Research and prospecting support designed to help
+                sales teams spend less time searching and more
+                time having conversations.
+
+            </p>
 
 
             <div class="services-grid">
 
-                <div class="card">
 
-                    <div class="card-icon">🛍️</div>
+                <div class="service-card">
 
-                    <h3>Product Listings</h3>
+                    <div class="service-number">
+                        01 / RESEARCH
+                    </div>
+
+                    <h3>
+                        Lead Research
+                    </h3>
 
                     <p>
-                        Creating organized and customer-friendly
-                        product titles, descriptions, features,
-                        and listing information.
+
+                        Researching companies, industries,
+                        markets, and prospects based on defined
+                        targeting criteria.
+
                     </p>
 
                 </div>
 
 
-                <div class="card">
+                <div class="service-card">
 
-                    <div class="card-icon">🔎</div>
+                    <div class="service-number">
+                        02 / PROSPECTING
+                    </div>
 
-                    <h3>Product Research</h3>
+                    <h3>
+                        B2B Lead Generation
+                    </h3>
 
                     <p>
-                        Researching products, competitors, markets,
-                        pricing, and product opportunities.
+
+                        Building targeted prospect lists based
+                        on company characteristics, industry,
+                        size, location, and other ICP criteria.
+
                     </p>
 
                 </div>
 
 
-                <div class="card">
+                <div class="service-card">
 
-                    <div class="card-icon">✍️</div>
+                    <div class="service-number">
+                        03 / PEOPLE
+                    </div>
 
-                    <h3>Listing Optimization</h3>
+                    <h3>
+                        Decision-Maker Research
+                    </h3>
 
                     <p>
-                        Improving product titles and descriptions
-                        to make listings clearer, more relevant,
-                        and easier for customers to understand.
+
+                        Identifying relevant founders, executives,
+                        department heads, and other buying
+                        stakeholders.
+
                     </p>
 
                 </div>
 
 
-                <div class="card">
+                <div class="service-card">
 
-                    <div class="card-icon">🏪</div>
+                    <div class="service-number">
+                        04 / ICP
+                    </div>
 
-                    <h3>Store Setup</h3>
+                    <h3>
+                        ICP Research
+                    </h3>
 
                     <p>
-                        Supporting basic e-commerce store organization,
-                        product uploads, collections, and store content.
+
+                        Translating an Ideal Customer Profile
+                        into practical account and prospect
+                        research criteria.
+
                     </p>
 
                 </div>
 
 
-                <div class="card">
+                <div class="service-card">
 
-                    <div class="card-icon">🎯</div>
+                    <div class="service-number">
+                        05 / DATA
+                    </div>
 
-                    <h3>Lead Research</h3>
+                    <h3>
+                        Data Enrichment
+                    </h3>
 
                     <p>
-                        Finding companies and decision-makers that
-                        match a specific ideal customer profile.
+
+                        Organizing and enriching prospect data
+                        so sales teams have useful information
+                        before outreach.
+
                     </p>
 
                 </div>
 
 
-                <div class="card">
+                <div class="service-card">
 
-                    <div class="card-icon">📊</div>
+                    <div class="service-number">
+                        06 / SDR
+                    </div>
 
-                    <h3>Lead Generation</h3>
+                    <h3>
+                        SDR Support
+                    </h3>
 
                     <p>
-                        Building structured prospect lists with
-                        relevant company and contact information.
+
+                        Supporting outbound sales activities
+                        through prospect research, list building,
+                        qualification, and sales intelligence.
+
                     </p>
 
                 </div>
@@ -607,114 +1014,215 @@
     </section>
 
 
-    <!-- PORTFOLIO -->
+    <!-- =========================
+         PROCESS
+    ========================== -->
 
-    <section id="portfolio" class="portfolio">
+    <section id="process" class="process">
 
         <div class="container">
 
-            <div class="section-title">
+            <div class="section-label">
+                Workflow
+            </div>
 
-                <h2>Portfolio Projects</h2>
+            <h2 class="section-title">
+                My Prospecting Process
+            </h2>
 
-                <p>
-                    Selected self-initiated projects and sample work.
-                </p>
+            <p class="section-description">
+
+                A structured workflow designed to turn a broad
+                market into a focused prospect list.
+
+            </p>
+
+
+            <div class="process-grid">
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        STEP 01
+                    </div>
+
+                    <h3>
+                        Define the ICP
+                    </h3>
+
+                    <p>
+
+                        Understand the ideal customer,
+                        industry, company size, geography,
+                        technology, and buying role.
+
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        STEP 02
+                    </div>
+
+                    <h3>
+                        Find Accounts
+                    </h3>
+
+                    <p>
+
+                        Research companies that match
+                        the defined targeting criteria.
+
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        STEP 03
+                    </div>
+
+                    <h3>
+                        Find People
+                    </h3>
+
+                    <p>
+
+                        Identify relevant decision-makers
+                        and stakeholders within target accounts.
+
+                    </p>
+
+                </div>
+
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        STEP 04
+                    </div>
+
+                    <h3>
+                        Organize Data
+                    </h3>
+
+                    <p>
+
+                        Structure and qualify the research
+                        into a clean, usable prospect database.
+
+                    </p>
+
+                </div>
 
             </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PORTFOLIO
+    ========================== -->
+
+    <section id="portfolio">
+
+        <div class="container">
+
+            <div class="section-label">
+                Selected Work
+            </div>
+
+            <h2 class="section-title">
+                Research Projects
+            </h2>
+
+            <p class="section-description">
+
+                Self-initiated projects created to demonstrate
+                my approach to B2B sales research and prospecting.
+
+            </p>
 
 
             <div class="portfolio-grid">
 
 
-                <div class="project">
+                <div class="project-card">
 
-                    <div class="project-header">
-                        🛒
+                    <div class="project-type">
+                        B2B SaaS
                     </div>
 
-                    <div class="project-body">
+                    <h3>
+                        SaaS Lead Research Project
+                    </h3>
 
-                        <h3>
-                            E-commerce Product Listing Optimization
-                        </h3>
+                    <p>
 
-                        <p>
-                            Sample project demonstrating how a basic
-                            product listing can be improved through
-                            better titles, descriptions, features,
-                            and product information.
-                        </p>
+                        Researched companies matching a defined
+                        SaaS Ideal Customer Profile and identified
+                        relevant decision-makers for outbound
+                        prospecting.
+
+                    </p>
+
+                    <div class="tags">
 
                         <span class="tag">
-                            Product Listing
+                            ICP Research
                         </span>
 
                         <span class="tag">
-                            Optimization
+                            Account Research
                         </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-header">
-                        🔍
-                    </div>
-
-                    <div class="project-body">
-
-                        <h3>
-                            B2B SaaS Lead Research
-                        </h3>
-
-                        <p>
-                            Self-initiated research project identifying
-                            companies that match a specific Ideal
-                            Customer Profile and organizing prospects
-                            into a structured lead database.
-                        </p>
-
-                        <span class="tag">
-                            Lead Research
-                        </span>
-
-                        <span class="tag">
-                            B2B SaaS
-                        </span>
-
-                    </div>
-
-                </div>
-
-
-                <div class="project">
-
-                    <div class="project-header">
-                        📋
-                    </div>
-
-                    <div class="project-body">
-
-                        <h3>
-                            Prospect Research Database
-                        </h3>
-
-                        <p>
-                            Sample prospecting database organized with
-                            company information, industry, decision-maker
-                            role, website, and qualification criteria.
-                        </p>
 
                         <span class="tag">
                             Prospecting
                         </span>
 
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-type">
+                        Sales Intelligence
+                    </div>
+
+                    <h3>
+                        Target Account Research
+                    </h3>
+
+                    <p>
+
+                        Built a sample target-account list using
+                        company characteristics such as industry,
+                        company size, business model, and market.
+
+                    </p>
+
+                    <div class="tags">
+
                         <span class="tag">
-                            Data Research
+                            Account Research
+                        </span>
+
+                        <span class="tag">
+                            Market Research
+                        </span>
+
+                        <span class="tag">
+                            Data Organization
                         </span>
 
                     </div>
@@ -722,30 +1230,74 @@
                 </div>
 
 
-                <div class="project">
+                <div class="project-card">
 
-                    <div class="project-header">
-                        🏪
+                    <div class="project-type">
+                        Lead Generation
                     </div>
 
-                    <div class="project-body">
+                    <h3>
+                        Decision-Maker Prospecting
+                    </h3>
 
-                        <h3>
-                            E-commerce Store Organization
-                        </h3>
+                    <p>
 
-                        <p>
-                            Sample store organization project covering
-                            product categories, collections, product
-                            information, and basic store structure.
-                        </p>
+                        Created a prospect database identifying
+                        relevant executives and department heads
+                        within target companies.
+
+                    </p>
+
+                    <div class="tags">
 
                         <span class="tag">
-                            Store Setup
+                            Lead Generation
                         </span>
 
                         <span class="tag">
-                            E-commerce
+                            Decision Makers
+                        </span>
+
+                        <span class="tag">
+                            Prospect Research
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-type">
+                        Sales Research
+                    </div>
+
+                    <h3>
+                        Market & Prospect Mapping
+                    </h3>
+
+                    <p>
+
+                        Mapped a target market by identifying
+                        potential accounts, relevant roles,
+                        business characteristics, and prospect
+                        qualification criteria.
+
+                    </p>
+
+                    <div class="tags">
+
+                        <span class="tag">
+                            Market Mapping
+                        </span>
+
+                        <span class="tag">
+                            Sales Research
+                        </span>
+
+                        <span class="tag">
+                            Qualification
                         </span>
 
                     </div>
@@ -760,91 +1312,165 @@
     </section>
 
 
-    <!-- SKILLS -->
+    <!-- =========================
+         SKILLS
+    ========================== -->
 
-    <section id="skills" class="skills">
-
-        <div class="container">
-
-            <div class="section-title">
-
-                <h2>Skills & Tools</h2>
-
-                <p>
-                    Tools and capabilities I use for digital business support.
-                </p>
-
-            </div>
-
-
-            <div class="skills-list">
-
-                <span class="skill">Web Research</span>
-
-                <span class="skill">Lead Generation</span>
-
-                <span class="skill">Product Research</span>
-
-                <span class="skill">Product Listings</span>
-
-                <span class="skill">Copywriting</span>
-
-                <span class="skill">Google Sheets</span>
-
-                <span class="skill">Microsoft Excel</span>
-
-                <span class="skill">Canva</span>
-
-                <span class="skill">Data Organization</span>
-
-                <span class="skill">E-commerce</span>
-
-                <span class="skill">B2B SaaS Research</span>
-
-                <span class="skill">AI-Assisted Research</span>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-
-    <section id="contact" class="contact">
+    <section class="skills">
 
         <div class="container">
 
-            <h2>Let's Work Together</h2>
+            <div class="section-label">
+                Skills
+            </div>
 
-            <p>
-                I'm open to freelance and remote opportunities
-                in e-commerce support, research, and lead generation.
+            <h2 class="section-title">
+                Research & Sales Skills
+            </h2>
+
+            <p class="section-description">
+
+                The core skills I'm developing for remote B2B
+                sales research and SDR roles.
+
             </p>
 
-            <div class="contact-links">
 
-                <!-- Replace these links with your real profiles -->
+            <div class="skills-wrapper">
 
-                <a
-                    href="https://www.upwork.com/"
-                    target="_blank"
-                    class="contact-btn">
-                    Upwork
-                </a>
+                <span class="skill">
+                    Lead Research
+                </span>
+
+                <span class="skill">
+                    Lead Generation
+                </span>
+
+                <span class="skill">
+                    B2B Prospecting
+                </span>
+
+                <span class="skill">
+                    Sales Research
+                </span>
+
+                <span class="skill">
+                    ICP Research
+                </span>
+
+                <span class="skill">
+                    Account Research
+                </span>
+
+                <span class="skill">
+                    Decision-Maker Research
+                </span>
+
+                <span class="skill">
+                    Lead Qualification
+                </span>
+
+                <span class="skill">
+                    Data Enrichment
+                </span>
+
+                <span class="skill">
+                    Market Research
+                </span>
+
+                <span class="skill">
+                    Prospect List Building
+                </span>
+
+                <span class="skill">
+                    Outbound Research
+                </span>
+
+                <span class="skill">
+                    Sales Intelligence
+                </span>
+
+                <span class="skill">
+                    Google Sheets
+                </span>
+
+                <span class="skill">
+                    Microsoft Excel
+                </span>
+
+                <span class="skill">
+                    Web Research
+                </span>
+
+                <span class="skill">
+                    AI-Assisted Research
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+
+    <section id="contact" class="cta">
+
+        <div class="container">
+
+            <div class="section-label">
+                Contact
+            </div>
+
+            <h2>
+                Let's Build a Better Pipeline.
+            </h2>
+
+            <p>
+
+                Looking for someone who can research your market,
+                identify qualified prospects, and organize the
+                information your sales team needs?
+
+                Let's connect.
+
+            </p>
+
+
+            <div class="hero-buttons"
+                 style="justify-content:center;">
+
+                <!-- Replace the links below with your real profiles -->
 
                 <a
                     href="https://www.linkedin.com/"
                     target="_blank"
-                    class="contact-btn">
+                    class="btn btn-primary">
+
                     LinkedIn
+
                 </a>
+
+
+                <a
+                    href="https://www.upwork.com/"
+                    target="_blank"
+                    class="btn btn-secondary">
+
+                    Upwork
+
+                </a>
+
 
                 <a
                     href="mailto:your.email@example.com"
-                    class="contact-btn">
+                    class="btn btn-secondary">
+
                     Email Me
+
                 </a>
 
             </div>
@@ -854,15 +1480,25 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================== -->
 
     <footer>
 
-        <p>
-            © 2026 Webster Cañamaque. All rights reserved.
-        </p>
+        <div class="container">
+
+            <p>
+
+                © 2026 Webster Cañamaque.
+                Lead Researcher | Lead Generation Specialist | SDR
+
+            </p>
+
+        </div>
 
     </footer>
+
 
 </body>
 </html>
